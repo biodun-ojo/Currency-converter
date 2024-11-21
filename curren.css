@@ -1,0 +1,35 @@
+body {
+  background-color: #9873fe;
+  font-family: "Rubik", sans-serif;
+}
+
+.main {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  background-color: white;
+}
+.main img {
+  width: 80px;
+}
+.main input {
+  width: 100%;
+}
+.main .chi {
+  width: 100%;
+}
+.main .chi .pick {
+  width: 100%;
+  /* Adjust the height as needed */
+  overflow-y: scroll;
+}
+.main .poi {
+  width: 100;
+}
+.main .poi button {
+  width: 100%;
+}
+.main .poi .output {
+  background-color: rgba(225, 225, 225, 0.656);
+}/*# sourceMappingURL=curren.css.map */

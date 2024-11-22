@@ -25,15 +25,20 @@ async function getrates() {
 
 //NGN/EUR = 1661.0797 / 0.9452 ≈ 1756.26 NGN/EUR
 
-let inputValue = fromOption.textContent
-let wantedOutput = toOption.textContent
+/* 
+let inputValue = fromOption.value
+let wantedOutput = toOption.value
+*/
 
-console.log(fromOption.textContent)
+console.log(fromOption.value)
+console.log(toOption.value)
 
 let inp;
 let out;
 
 function destructure(data) {
+	let inputValue = fromOption.value
+	let wantedOutput = toOption.value
 
 	const {
 		conversion_rates: {
@@ -48,6 +53,17 @@ function destructure(data) {
 	inp = inputRate
 	out = outputRate
 }
+
+/*
+fromOption.addEventListener('change', () => {
+	const selectedValue = fromOption.value;
+	console.log('Selected  value: ', selectedValue);
+
+	// You can now use the selectedValue in your JavaScript code
+	// For example, you can send it to a server using AJAX, or use it to update other elements on the page
+});
+*/
+
 
 
 
@@ -64,11 +80,11 @@ function calculation() {
 
 	let toInputValue = toOutput
 
-	let roundedNumber = toInputValue.toFixed(4)
+	let roundedNumber = toInputValue.toFixed(2)
 
-	console.log(`${toInputValue} ${fromOption.textContent}/${toOption.textContent} or ${toOption.textContent}`)
+	console.log(`${toInputValue} ${fromOption.value}/${toOption.value} or ${toOption.value}`)
 
-	output.textContent = `${fromIputValue} ${fromOption.textContent} = ${roundedNumber} ${toOption.textContent}`
+	output.textContent = `${fromIputValue} ${fromOption.value} = ${roundedNumber} ${toOption.value}`
 }
 
 
@@ -460,10 +476,88 @@ currencies = [
 	"ZWL",
 ]
 
-/* 
+
 const show = document.getElementById('show')
 const show2 = document.getElementById('show2')
 
+currencies.forEach(option => {
+	const optionElement = document.createElement('option');
+	optionElement.textContent = option;
+	optionElement.classList = 'them'
+	optionElement.value = option;
+	// Set the value attribute if needed
+	fromOption.appendChild(optionElement);
+	//toOption.appendChild(optionElement)
+	//show2.appendChild(optionElement);
+});
+
+currencies.forEach(option => {
+	const optionElement = document.createElement('option');
+	optionElement.textContent = option;
+	optionElement.classList = 'them'
+	optionElement.value = option;
+	// Set the value attribute if needed
+	//fromOption.appendChild(optionElement);
+	toOption.appendChild(optionElement)
+	//show2.appendChild(optionElement);
+});
+
+/*
+fromOption.addEventListener('click', () => {
+
+	//show.style.display = 'block'
+
+	currencies.forEach(option => {
+		const optionElement = document.createElement('option');
+		//optionElement.textContent = option;
+		optionElement.classList = 'them'
+		//optionElement.value = option;
+		// Set the value attribute if needed
+		fromOption.appendChild(optionElement);
+		//show2.appendChild(optionElement);
+	});
+
+	const them = document.getElementsByClassName('them')
+
+	console.log(them)
+
+	/* 
+	if (them) {
+		them.forEach(element => {
+			element.addEventListener('click', () => {
+				fromOption.textContent = option
+				//show.style.display = 'none'
+				// Do something when the element is clicked
+				console.log('Element clicked:', element.textContent);
+			});
+		});
+	} else {
+		console.log('not available')
+	}
+	
+}) */
+
+
+
+
+/*
+
+const them = document.getElementsByClassName('them')
+
+them.forEach(element => {
+	element.addEventListener('click', () => {
+		fromOption.textContent = option
+		show.style.display = 'none'
+		// Do something when the element is clicked
+		console.log('Element clicked:', element.textContent);
+	});
+});
+
+them.addEventListener('click', () => {
+	fromOption.textContent = option
+	show.style.display = 'none'
+
+})
 
 currencies.forEach(option => {
 	const optionElement = document.createElement('option');
@@ -471,7 +565,7 @@ currencies.forEach(option => {
 	optionElement.value = option;
 	// Set the value attribute if needed
 	show.appendChild(optionElement);
-	show2.appendChild(optionElement);
+	//show2.appendChild(optionElement);
 
 });
 */

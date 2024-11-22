@@ -24,17 +24,35 @@
 		<img src="assets/flat-color-icons--currency-exchange.svg" alt="currency-logo" class="mx-auto d-block mb-4">
 		<h4 class="text-center">CURRENCY CONVERTER</h4>
 		<section>
-			<label for="money"></label>
-			<input id="input" type="number" name="money">
+			<label for="money" class="my-2">Amount:</label>
+			<input id="input" class="border-0" type="number" name="money" placeholder="">
 
 			<div class="d-flex justify-content-between gap-4 my-4">
 				<div class="chi">
-					<button  id="fromOption" class="pick border">NGN</button>
-					<div id="show"></div>
+					<select id="fromOption" class="pick border-0 py-1">
+						<option value="option1">Option 1</option>
+						<option value="NGN">NGN</option>
+						<option value="option3">Option 3</option>
+					</select>
+
+
+					<!--
+					<button id="fromOption" class="pick border">NGN</button>
+					<div id="show" class="show  text-center"></div>
+					-->
+					
 				</div>
 				<div class="chi">
+					<select id="toOption" class="pick border-0 py-1">
+						<option value="option1">Option 1</option>
+						<option value="GBP">GBP</option>
+						<option value="option3">Option 3</option>
+					</select>
+
+					<!--
 					<button id="toOption" class="pick border">GBP</button>
-					<div id="show2"></div>
+					<div id="show2" class="show text-center"></div>
+					-->
 				</div>
 			</div>
 

@@ -75,12 +75,13 @@ btn.addEventListener('click', async () => {
 		console.log(ratesdata)
 		destructure(ratesdata)
 		calculation()
-		
+
 	} catch (error) {
 		console.error(error)
 	}
 })
 
+/*
 currencies.forEach(option => {
 	const optionElement = document.createElement('option');
 	optionElement.textContent = option;
@@ -98,3 +99,37 @@ currencies.forEach(option => {
 	// Set the value attribute if needed
 	toOption.appendChild(optionElement)
 });
+
+currencies.forEach(option => {
+	const optionElement = document.createElement('option');
+	optionElement.classList = 'them'
+	option.forEach(item => {
+		const div = document.createElement('div');
+		const div2 = document.createElement('div');
+		div = option[0]
+		div2 = option[1]
+		optionElement.value = option[0];
+	})
+	toOption.appendChild(optionElement)
+})
+*/
+
+currencies.forEach(options => {
+	console.log("code:" + options.code);
+	console.log("CurrencyName:" + options.CurrencyName);
+
+	if (Array.isArray(options.CountryName)) {
+		//console.log("myVariable is an array!");
+		console.log("CountryName:" + options.CountryName[0])
+	} else {
+		//console.log("myVariable is not an array") 
+	    console.log("CountryName:" + options.CountryName)
+	}
+})
+
+
+if ("array".includes("arr")) {   // the search.value should be arr 
+	console.log('true')
+} else {
+	console.log('false')
+}

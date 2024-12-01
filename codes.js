@@ -1,169 +1,483 @@
 currencies = [
-	"AED",
+	{
+		code: "AED",
+		CurrencyName: "UAE Dirham",
+		CountryName: "United Arab Emirates"
+	},
 
-	"AFN",
+	{
+		code: "AFN",
+		CurrencyName: "Afghani",
+		CountryName: "Afghanistan"
+	},
 
-	"ALL",
+	{
+		code: "ALL",
+		CurrencyName: "Lek",
+		CountryName: "Albania"
+	},
 
-	"AMD",
+	{
+		code: "AMD",
+		CurrencyName: "Armeniam Dram",
+		CountryName: "Armenia"
+	},
 
-	"ANG",
+	{
+		code: "ANG",
+		CurrencyName: "Netherlands Antillian Guilder",
+		CountryName: ["Curaçao", "Sint Maarten"]
+	},
 
-	"AOA",
+	{
+		code: "AOA",
+		CurrencyName: "Kwanza",
+		CountryName: "Angola"
+	},
 
-	"ARS",
+	{
+		code: "ARS",
+		CurrencyName: "Argentine Peso",
+		CountryName: "Argentina"
+	},
 
-	"AUD",
+	{
+		code: "AUD",
+		CurrencyName: "Australian Dollar",
+		CountryName: ["Australia", "Christmas Island", "Cocos (Keeling) Islands", "Kiribati", "Nauru", "Tuvalu"]
+	},
 
-	"AWG",
+	{
+		code: "AWG",
+		CurrencyName: "Aruban Florin",
+		CountryName: "Aruba"
+	},
 
-	"AZN",
+	{
+		code: "AZN",
+		CurrencyName: "Azerbaijanian Manat",
+		CountryName: "Azerbaijan"
+	},
 
-	"BAM",
+	{
+		code: "BAM",
+		CurrencyName: "Convertible Mark",
+		CountryName: "Bosnia and Herzegovina"
+	},
 
-	"BBD",
+	{
+		code: "BBD",
+		CurrencyName: "Barbados Dollar",
+		CountryName: "Barbados"
+	},
 
-	"BDT",
+	{
+		code: "BDT",
+		CurrencyName: "Taka",
+		CountryName: "Bangladesh"
+	},
 
-	"BGN",
+	{
+		code: "BGN",
+		CurrencyName: "Bulgarian Lev",
+		CountryName: "Bulgaria"
+	},
 
-	"BHD",
+	{
+		code: "BHD",
+		CurrencyName: "Bahraini Dinar",
+		CountryName: "Bahrain"
+	},
 
-	"BIF",
+	{
+		code: "BIF",
+		CurrencyName: "Burundi Franc",
+		CountryName: "Burundi"
+	},
 
-	"BMD",
+	{
+		code: "BMD",
+		CurrencyName: "Bermudian Dollar",
+		CountryName: "Bermuda"
+	},
 
-	"BND",
+	{
+		code: "BND",
+		CurrencyName: "Brunei Dollar",
+		CountryName: "Brunei Darussalam"
+	},
+,
+	{
+		code: "BOB",
+		CurrencyName: "Boliviano",
+		CountryName: "Bolivia (Plurinat.State)"
+	},
 
-	"BOB",
+	{
+		code: "BRL",
+		CurrencyName: "Brazilian Real",
+		CountryName: "Brazil"
+	},
 
-	"BRL",
+	{
+		code: "BSD",
+		CurrencyName: "Bahamian Dollar",
+		CountryName: "Bahamas"
+	},
 
-	"BSD",
+	{
+		code: "BTN",
+		CurrencyName: "Ngultrum",
+		CountryName: "Bhutan"
+	},
 
-	"BTN",
+	{
+		code: "BWP",
+		CurrencyName: "Pula",
+		CountryName: "Botswana"
+	},
 
-	"BWP",
+	{
+		code: "BYN",
+		CurrencyName: "Belarusian Ruble",
+		CountryName: "Belarus"
+	},
 
-	"BYN",
+	{
+		code: "BZD",
+		CurrencyName: "Belize Dollar",
+		CountryName: "Belize"
+	},
 
-	"BZD",
+	{
+		code: "CAD",
+		CurrencyName: "Canadian Dollar",
+		CountryName: "Canada"
+	},
 
-	"CAD",
+	{
+		code: "CDF",
+		CurrencyName: "Congolese Franc",
+		CountryName: "Congo, Dem. Rep. of the"
+	},
 
-	"CDF",
+	{
+		code: "CHF",
+		CurrencyName: "Swiss Franc",
+		CountryName: ["Liechtenstein", "Switzerland"]
+	},
 
-	"CHF",
+	{
+		code: "CLP",
+		CurrencyName: "Chilean Peso",
+		CountryName: "Chile"
+	},
 
-	"CLP",
+	{
+		code: "CNY",
+		CurrencyName: "Yuan Renminbi",
+		CountryName: "China"
+	},
 
-	"CNY",
+	{
+		code: "COP",
+		CurrencyName: "Colombian Peso",
+		CountryName: "Colombia"
+	},
 
-	"COP",
+	{
+		code: "CRC",
+		CurrencyName: "Costa Rican Colón",
+		CountryName: "Costa Rica"
+	},
 
-	"CRC",
+	{
+		code: "CUP",
+		CurrencyName: "Cuban Peso",
+		CountryName: "Cuba"
+	},
 
-	"CUP",
+	{
+		code: "CVE",
+		CurrencyName: "Cabo Verde Escudo",
+		CountryName: "Cabo Verde"
+	},
 
-	"CVE",
+	{
+		code: "CZK",
+		CurrencyName: "Czech Koruna",
+		CountryName: "Czechia"
+	},
 
-	"CZK",
+	{
+		code: "DJF",
+		CurrencyName: "Djibouti Franc",
+		CountryName: "Djibouti"
+	},
 
-	"DJF",
+	{
+		code: "DKK",
+		CurrencyName: "Danish Krone",
+		CountryName: ["Denmark", "Faroe Islands", "Greenland"]
+	},
 
-	"DKK",
+	{
+		code: "DOP",
+		CurrencyName: "Dominican Peso",
+		CountryName: "Dominican Republic"
+	},
 
-	"DOP",
+	{
+		code: "DZD",
+		CurrencyName: "Algerian Dinar",
+		CountryName: "Algeria"
+	},
 
-	"DZD",
+	{
+		code: "EGP",
+		CurrencyName: "Egyptian Pound",
+		CountryName: "Egypt"
+	},
 
-	"EGP",
+	{
+		code: "ERN",
+		CurrencyName: "Nakfa",
+		CountryName: "Eritrea"
+	},
 
-	"ERN",
+	{
+		code: "ETB",
+		CurrencyName: "Ethiopian Birr",
+		CountryName: "Ethiopia"
+	},
 
-	"ETB",
+	{
+		code: "EUR",
+		CurrencyName: "Euro",
+		CountryName: ["Andorra", "Austria", "Belgium", "Cyprus", "Estonia", "Finland", "France", "French Guiana", "French Southern Terr", "Germany", "Greece", "Guadeloupe", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Martinique", "Mayotte", "Montenegro", "Netherlands", "Portugal", "Réunion", "Saint Barthélemy", "Saint-Martin", "St. Pierre and Miquelon", "Slovakia", "Slovenia", "Spain"]
+	},
 
-	"EUR",
+	{
+		code: "FJD",
+		CurrencyName: "Fiji Dollar",
+		CountryName: "Fiji, Republic of"
+	},
 
-	"FJD",
-
-	"FKP",
+	{
+		code: "FKP",
+		CurrencyName: "Falkland Islands Pound",
+		CountryName: "Falkland Is.(Malvinas)"
+	},
 
 	"FOK",
 
-	"GBP",
+	{
+		code: "GBP",
+		CurrencyName: "Pound Sterling",
+		CountryName: ["United Kingdom", "Channel Islands", "Guernsey", "Isle of Man", "Jersey"]
+	},
 
-	"GEL",
+	{
+		code: "GEL",
+		CurrencyName: "Lari",
+		CountryName: "Georgia"
+	},
 
 	"GGP",
 
-	"GHS",
+	{
+		code: "GHS",
+		CurrencyName: "Ghana Cedi",
+		CountryName: "Ghana"
+	},
 
-	"GIP",
+	{
+		code: "GIP",
+		CurrencyName: "Gibraltar Pound",
+		CountryName: "Gibraltar"
+	},
 
-	"GMD",
+	{
+		code: "GMD",
+		CurrencyName: "Dalasi",
+		CountryName: "Gambia"
+	},
 
-	"GNF",
+	{
+		code: "GNF",
+		CurrencyName: "Guinea Franc",
+		CountryName: "Guinea"
+	},
 
-	"GTQ",
+	{
+		code: "GTQ",
+		CurrencyName: "Quetzal",
+		CountryName: "Guatemala"
+	},
 
-	"GYD",
+	{
+		code: "GYD",
+		CurrencyName: "Guyana Dollar",
+		CountryName: "Guyana"
+	},
 
-	"HKD",
+	{
+		code: "HKD",
+		CurrencyName: "Hong Kong Dollar",
+		CountryName: "China, Hong Kong SAR"
+	},
 
-	"HNL",
+	{
+		code: "HNL",
+		CurrencyName: "Lempira",
+		CountryName: "Honduras"
+	},
 
-	"HRK",
+	{
+		code: "HRK",
+		CurrencyName: "Croatian Kuna",
+		CountryName: "Croatia"
+	},
 
-	"HTG",
+	{
+		code: "HTG",
+		CurrencyName: "Gourde",
+		CountryName: "Haiti"
+	},
 
-	"HUF",
+	{
+		code: "HUF",
+		CurrencyName: "Forint",
+		CountryName: "Hungary"
+	},
 
-	"IDR",
+	{
+		code: "IDR",
+		CurrencyName: "Rupiah",
+		CountryName: "Indonesia"
+	},
 
-	"ILS",
+	{
+		code: "ILS",
+		CurrencyName: "New Israeli Sheqel",
+		CountryName: "Israel"
+	},
 
 	"IMP",
 
-	"INR",
+	{
+		code: "INR",
+		CurrencyName: "Indian Rupee",
+		CountryName: "India"
+	},
 
-	"IQD",
+	{
+		code: "IQD",
+		CurrencyName: "Iraqi Dinar",
+		CountryName: "Iraq"
+	},
 
-	"IRR",
+	{
+		code: "IRR",
+		CurrencyName: "Iranian Rial",
+		CountryName: "Iran (Islamic Rep. of)"
+	},
 
-	"ISK",
+	{
+		code: "ISK",
+		CurrencyName: "Iceland Króna",
+		CountryName: "Iceland"
+	},
 
 	"JEP",
 
-	"JMD",
+	{
+		code: "JMD",
+		CurrencyName: "Jamaican Dollar",
+		CountryName: "Jamaica"
+	},
 
-	"JOD",
+	{
+		code: "JOD",
+		CurrencyName: "Jordanian Dinar",
+		CountryName: "Jordan"
+	},
 
-	"JPY",
+	{
+		code: "JPY",
+		CurrencyName: "Yen",
+		CountryName: "Japan"
+	},
 
-	"KES",
+	{
+		code: "KES",
+		CurrencyName: "Kenyan Shilling",
+		CountryName: "Kenya"
+	},
 
-	"KGS",
+	{
+		code: "KGS",
+		CurrencyName: "Som",
+		CountryName: "Kyrgyzstan"
+	},
 
-	"KHR",
+	{
+		code: "KHR",
+		CurrencyName: "Riel",
+		CountryName: "Cambodia"
+	},
 
 	"KID",
 
-	"KMF",
+	{
+		code: "KMF",
+		CurrencyName: "Comoro Franc",
+		CountryName: "Comoros"
+	},
 
-	"KRW",
+	//"KPW"
 
-	"KWD",
+	{
+		code: "KRW",
+		CurrencyName: "Won",
+		CountryName: "Korea, Republic of"
+	},
 
-	"KYD",
+	{
+		code: "KWD",
+		CurrencyName: "Kuwaiti Dinar",
+		CountryName: "Kuwait"
+	},
 
-	"KZT",
+	{
+		code: "KYD",
+		CurrencyName: "Cayman Islands Dollar",
+		CountryName: "Cayman Islands"
+	},
 
-	"LAK",
+	{
+		code: "KZT",
+		CurrencyName: "Tenge",
+		CountryName: "Kazakhstan"
+	},
 
-	"LBP",
+	{
+		code: "LAK",
+		CurrencyName: "Kip",
+		CountryName: "Lao People's Dem. Rep"
+	},
 
-	"LKR",
+	{
+		code: "LBP",
+		CurrencyName: "Lebanese Pound",
+		CountryName: "Lebanon"
+	},
+
+	{
+		code: "LKR",
+		CurrencyName: "Sri Lanka Rupee",
+		CountryName: "Sri Lanka"
+	},
 
 	"LRD",
 
@@ -311,15 +625,39 @@ currencies = [
 
 	"XDR",
 
-	"XOF",
+	{
+		code: "XOF",
+		CurrencyName: "CFA Franc (BCEAO)",
+		CountryName: ["Benin", "Burkina Faso", "Côte d'Ivoire", "Guinea-Bissau", "Mali", "Niger", "Senegal", "Togo"]
+	},
 
-	"XPF",
+	{
+		code: "XPF",
+		CurrencyName: "CFP Franc",
+		CountryName: ["French Polynesia", "New Caledonia", "Wallis and Futuna Is."]
+	},
 
-	"YER",
+	{
+		code: "YER",
+		CurrencyName: "Yemeni Rial",
+		CountryName: "Yemen"
+	},
 
-	"ZAR",
+	{
+		code: "ZAR",
+		CurrencyName: "Rand",
+		CountryName: "South Africa"
+	},
 
-	"ZMW",
+	{
+		code: "ZMW",
+		CurrencyName: "Zambian Kwacha",
+		CountryName: "Zambia"
+	},
 
-	"ZWL",
+	{
+		code: "ZWL",
+		CurrencyName: "Zimbabwe Dollar",
+		CountryName: "Zimbabwe"
+	},
 ]

@@ -7,7 +7,6 @@ const fromOption = document.getElementById('fromOption')
 const toOption = document.getElementById('toOption')
 const catchz = 'f1db9cf4fbef7c0ff586c168'
 
-let api = ` https://v6.exchangerate-api.com/v6/f1db9cf4fbef7c0ff586c168/latest/USD`
 
 async function getrates() {
 	let api = ` https://v6.exchangerate-api.com/v6/f1db9cf4fbef7c0ff586c168/latest/USD`
@@ -114,6 +113,8 @@ currencies.forEach(option => {
 })
 */
 
+
+/*
 currencies.forEach(options => {
 	console.log("code:" + options.code);
 	console.log("CurrencyName:" + options.CurrencyName);
@@ -126,10 +127,66 @@ currencies.forEach(options => {
 	    console.log("CountryName:" + options.CountryName)
 	}
 })
+*/
 
 
+
+const fromSearch = document.getElementById('fromSearch')
+
+fromSearch.addEventListener('input', () => {
+	//console.log('hello')
+
+	const fromSearchz = document.getElementById('fromSearch')
+
+	/*
+	if ("array".includes(fromSearchz.value)) {   // the search.value should be arr 
+		console.log('true')
+	} else {
+		console.log('false')
+	}
+	*/
+
+
+	currencies.forEach(options => {
+		/* 
+		console.log("code:" + options.code);
+		console.log("CurrencyName:" + options.CurrencyName);
+	
+		if (Array.isArray(options.CountryName)) {
+			//console.log("myVariable is an array!");
+			console.log("CountryName:" + options.CountryName[0])
+		} else {
+			//console.log("myVariable is not an array") 
+			console.log("CountryName:" + options.CountryName)
+		}
+		*/
+
+		//console.log(options.code)
+
+
+		if (options.code.includes(fromSearchz.value.toUpperCase())) {   // the search.value should be arr 
+			console.log(options.code)
+
+		} else {
+			console.log(' ')
+		}
+	})
+
+})
+
+function search () {
+	if ("array".includes(fromSearch.value)) {   // the search.value should be arr 
+		console.log('true')
+	} else {
+		console.log('false')
+	}
+}
+// search ()
+
+/*
 if ("array".includes("arr")) {   // the search.value should be arr 
 	console.log('true')
 } else {
 	console.log('false')
-}
+}	
+*/

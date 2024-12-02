@@ -269,7 +269,7 @@ currencies = [
 		CountryName: "Falkland Is.(Malvinas)"
 	},
 
-	"FOK",
+	///"FOK",
 
 	{
 		code: "GBP",
@@ -283,7 +283,7 @@ currencies = [
 		CountryName: "Georgia"
 	},
 
-	"GGP",
+	//"GGP",
 
 	{
 		code: "GHS",
@@ -363,7 +363,7 @@ currencies = [
 		CountryName: "Israel"
 	},
 
-	"IMP",
+	//"IMP",
 
 	{
 		code: "INR",
@@ -389,7 +389,7 @@ currencies = [
 		CountryName: "Iceland"
 	},
 
-	"JEP",
+	//"JEP",
 
 	{
 		code: "JMD",
@@ -427,7 +427,7 @@ currencies = [
 		CountryName: "Cambodia"
 	},
 
-	"KID",
+	//"KID",
 
 	{
 		code: "KMF",
@@ -737,7 +737,7 @@ currencies = [
 		CountryName: "Saint Helena"
 	},
 
-	"SLE",
+	//"SLE",
 
 	{
 		code: "SLL",
@@ -823,7 +823,7 @@ currencies = [
 		CountryName: "Trinidad and Tobago"
 	},
 
-	"TVD",
+	//"TVD",
 
 	{
 		code: "TWD",
@@ -843,7 +843,7 @@ currencies = [
 		CountryName: "Ukraine"
 	},
 
-	"UGX",
+	//"UGX",
 	{
 		code: "UGX",
 		CurrencyName: "Uganda Shilling",
@@ -904,7 +904,7 @@ currencies = [
 		CountryName: ["Anguilla", "Antigua and Barbuda", "Dominica", "Grenada", "Montserrat", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent/Grenadines"]
 	},
 
-	"XDR",
+	//"XDR",
 
 	{
 		code: "XOF",

@@ -479,149 +479,430 @@ currencies = [
 		CountryName: "Sri Lanka"
 	},
 
-	"LRD",
+	{
+		code: "LRD",
+		CurrencyName: "Liberian Dollar",
+		CountryName: "Liberia"
+	},
 
-	"LSL",
+	{
+		code: "LSL",
+		CurrencyName: "Loti",
+		CountryName: "Lesotho"
+	},
 
-	"LYD",
+	{
+		code: "LYD",
+		CurrencyName: "Libyan Dinar",
+		CountryName: "Libya"
+	},
 
-	"MAD",
+	{
+		code: "MAD",
+		CurrencyName: "Moroccan Dirham",
+		CountryName: ["Morocco", "Western Sahara"]
+	},
 
-	"MDL",
+	{
+		code: "MDL",
+		CurrencyName: "Moldovan Leu",
+		CountryName: "Moldova, Republic of"
+	},
 
-	"MGA",
+	{
+		code: "MGA",
+		CurrencyName: "Malagasy Ariary",
+		CountryName: "Madagascar"
+	},
 
-	"MKD",
+	{
+		code: "MKD",
+		CurrencyName: "Denar",
+		CountryName: "Macedonia, Fmr Yug Rp of"
+	},
 
-	"MMK",
+	{
+		code: "MMK",
+		CurrencyName: "Kyat",
+		CountryName: "Myanmar"
+	},
 
-	"MNT",
+	{
+		code: "MNT",
+		CurrencyName: "Tugrik",
+		CountryName: "Mongolia"
+	},
 
-	"MOP",
+	{
+		code: "MOP",
+		CurrencyName: "Pataca",
+		CountryName: "China, Macao SAR"
+	},
 
-	"MRU",
+	{
+		code: "MRU",    //MRO
+		CurrencyName: "Ouguiya",
+		CountryName: "Mauritania"
+	},
 
-	"MUR",
+	{
+		code: "MUR",
+		CurrencyName: "Mauritius Rupee",
+		CountryName: "Mauritius"
+	},
 
-	"MVR",
+	{
+		code: "MVR",
+		CurrencyName: "Rufiyaa",
+		CountryName: "Maldives"
+	},
 
-	"MWK",
+	{
+		code: "MWK",
+		CurrencyName: "Malawi Kwacha",
+		CountryName: "Malawi"
+	},
 
-	"MXN",
+	{
+		code: "MXN",
+		CurrencyName: "Mexican Peso",
+		CountryName: "Mexico"
+	},
 
-	"MYR",
+	{
+		code: "MYR",
+		CurrencyName: "Malaysian Ringgit",
+		CountryName: "Malaysia"
+	},
 
-	"MZN",
+	{
+		code: "MZN",
+		CurrencyName: "Metical",
+		CountryName: "Mozambique"
+	},
 
-	"NAD",
+	{
+		code: "NAD",
+		CurrencyName: "Namibian Dollar",
+		CountryName: "Namibia"
+	},
 
-	"NGN",
+	{
+		code: "NGN",
+		CurrencyName: "Naira",
+		CountryName: "Nigeria"
+	},
 
-	"NIO",
+	{
+		code: "NIO",
+		CurrencyName: "Córdoba Oro",
+		CountryName: "Nicaragua"
+	},
 
-	"NOK",
+	{
+		code: "NOK",
+		CurrencyName: "Norwegian Krone",
+		CountryName: "Norway"
+	},
 
-	"NPR",
+	{
+		code: "NPR",
+		CurrencyName: "Nepalese Rupee",
+		CountryName: "Nepal"
+	},
 
-	"NZD",
+	{
+		code: "NZD",
+		CurrencyName: "New Zealand Dollar",
+		CountryName: ["New Zealand", "Cook Islands","Niue","Pitcairn Islands","Tokelau"]
+	},
 
-	"OMR",
+	{
+		code: "OMR",
+		CurrencyName: "Rial Omani",
+		CountryName: "Oman"
+	},
 
-	"PAB",
+	{
+		code: "PAB",
+		CurrencyName: "Balboa",
+		CountryName: "Panama"
+	},
 
-	"PEN",
+	{
+		code: "PEN",
+		CurrencyName: "Sol",
+		CountryName: "Peru"
+	},
 
-	"PGK",
+	{
+		code: "PGK",
+		CurrencyName: "Kina",
+		CountryName: "Papua New Guinea"
+	},
 
-	"PHP",
+	{
+		code: "PHP",
+		CurrencyName: "Philippine Peso",
+		CountryName: "Philippines"
+	},
 
-	"PKR",
+	{
+		code: "PKR",
+		CurrencyName: "Pakistan Rupee",
+		CountryName: "Pakistan"
+	},
 
-	"PLN",
+	{
+		code: "PLN",
+		CurrencyName: "Zloty",
+		CountryName: "Poland"
+	},
 
-	"PYG",
+	{
+		code: "PYG",
+		CurrencyName: "Guaraní",
+		CountryName: "PYG Guaraní Paraguay"
+	},
 
-	"QAR",
+	{
+		code: "QAR",
+		CurrencyName: "Qatari Rial",
+		CountryName: "Qatar"
+	},
 
-	"RON",
+	{
+		code: "RON",
+		CurrencyName: "Romanian Leu",
+		CountryName: "Romania"
+	},
 
-	"RSD",
+	{
+		code: "RSD",
+		CurrencyName: "Serbian Dinar",
+		CountryName: "Serbia"
+	},
 
-	"RUB",
+	{
+		code: "RUB",
+		CurrencyName: "Russian Ruble",
+		CountryName: "Russian Federation"
+	},
 
-	"RWF",
+	{
+		code: "RWF",
+		CurrencyName: "Rwanda Franc",
+		CountryName: "Rwanda"
+	},
 
-	"SAR",
+	{
+		code: "SAR",
+		CurrencyName: "Saudi Riyal",
+		CountryName: "Saudi Arabia"
+	},
 
-	"SBD",
+	{
+		code: "SBD",
+		CurrencyName: "Solomon Islands Dollar",
+		CountryName: "Solomon Islands"
+	},
 
-	"SCR",
+	{
+		code: "SCR",
+		CurrencyName: "Seychelles Rupee",
+		CountryName: "Seychelles"
+	},
 
-	"SDG",
+	{
+		code: "SDG",
+		CurrencyName: "Sudanese Pound",
+		CountryName: "Sudan"
+	},
 
-	"SEK",
+	{
+		code: "SEK",
+		CurrencyName: "Swedish Krona ",
+		CountryName: "Sweden"
+	},
 
-	"SGD",
+	{
+		code: "SGD",
+		CurrencyName: "Singapore Dollar",
+		CountryName: "Singapore"
+	},
 
-	"SHP",
+	{
+		code: "SHP",
+		CurrencyName: "Saint Helena Pound",
+		CountryName: "Saint Helena"
+	},
 
 	"SLE",
 
-	"SLL",
+	{
+		code: "SLL",
+		CurrencyName: "Leone",
+		CountryName: "Sierra Leone"
+	},
 
-	"SOS",
+	{
+		code: "SOS",
+		CurrencyName: "Somali Shilling",
+		CountryName: "Somalia"
+	},
 
-	"SRD",
+	{
+		code: "SRD",
+		CurrencyName: "Suriname Dollar",
+		CountryName: "Suriname"
+	},
 
-	"SSP",
+	{
+		code: "SSP",
+		CurrencyName: "South Sudanese Pound",
+		CountryName: "South Sudan"
+	},
 
-	"STN",
+	{
+		code: "STN",  //STD
+		CurrencyName: "Dobra",
+		CountryName: "Sao Tome and Principe"
+	},
 
-	"SYP",
+	{
+		code: "SYP",
+		CurrencyName: "Syrian Pound",
+		CountryName: "Syrian Arab Republic"
+	},
 
-	"SZL",
+	{
+		code: "SZL",
+		CurrencyName: "Lilangeni",
+		CountryName: "Swaziland"
+	},
 
-	"THB",
+	{
+		code: "THB",
+		CurrencyName: "Baht",
+		CountryName: "Thailand"
+	},
 
-	"TJS",
+	{
+		code: "TJS",
+		CurrencyName: "Somoni",
+		CountryName: "Tajikistan"
+	},
 
-	"TMT",
+	{
+		code: "TMT",
+		CurrencyName: "Turkmenistan New Manat",
+		CountryName: "Turkmenistan"
+	},
 
-	"TND",
+	{
+		code: "TND",
+		CurrencyName: "Tunisian Dinar",
+		CountryName: "Tunisia"
+	},
 
-	"TOP",
+	{
+		code: "TOP",
+		CurrencyName: "Pa'anga",
+		CountryName: "Tonga"
+	},
 
-	"TRY",
+	{
+		code: "TRY",
+		CurrencyName: "Turkish Lira ",
+		CountryName: "Turkey"
+	},
 
-	"TTD",
+	{
+		code: "TTD",
+		CurrencyName: "Trinidad and Tobago Dollar",
+		CountryName: "Trinidad and Tobago"
+	},
 
 	"TVD",
 
-	"TWD",
+	{
+		code: "TWD",
+		CurrencyName: "New Taiwan Dollar",
+		CountryName: "Taiwan Province of China"
+	},
 
-	"TZS",
+	{
+		code: "TZS",
+		CurrencyName: "Tanzanian Shilling",
+		CountryName: "Tanzania, United Rep. o"
+	},
 
-	"UAH",
+	{
+		code: "UAH",
+		CurrencyName: "Hryvnia",
+		CountryName: "Ukraine"
+	},
 
 	"UGX",
+	{
+		code: "UGX",
+		CurrencyName: "Uganda Shilling",
+		CountryName: "Uganda"
+	},
 
-	"USD",
+	{
+		code: "USD",
+		CurrencyName: "US Dollar",
+		CountryName: ["United States of America","American Samoa", "Bonaire/S.Eustatius/Saba", "British Indian Ocean Ter", "British Virgin Islands","Ecuador", "El Salvador", "Guam", "Marshall Islands", "Micronesia,Fed.States of", "Northern Mariana Is.", "Palau", "Puerto Rico", "Timor-Leste", "Turks and Caicos Is.", "US Virgin Islands"]
+	},
 
-	"UYU",
+	{
+		code: "UYU",
+		CurrencyName: "Peso Uruguayo",
+		CountryName: "Uruguay"
+	},
 
-	"UZS",
+	{
+		code: "UZS",
+		CurrencyName: "Uzbekistan Sum",
+		CountryName: "Uzbekistan"
+	},
 
-	"VES",
+	{
+		code: "VES",  //VEF
+		CurrencyName: "Bolívar",
+		CountryName: "Venezuela, Boliv Rep of"
+	},
 
-	"VND",
+	{
+		code: "VND",
+		CurrencyName: "Dong",
+		CountryName: "Viet Nam"
+	},
 
-	"VUV",
+	{
+		code: "VUV",
+		CurrencyName: "Vatu",
+		CountryName: "Vanuatu"
+	},
 
-	"WST",
+	{
+		code: "WST",
+		CurrencyName: "Tala",
+		CountryName: "Samoa"
+	},
 
-	"XAF",
+	{
+		code: "XAF",
+		CurrencyName: "CFA Franc (BEAC)",
+		CountryName: ["Cameroon", "Central African Republic", "Chad", "Congo", "Equatorial Guinea", "Gabon"]
+	},
 
-	"XCD",
+	{
+		code: "XCD",
+		CurrencyName: "East Caribbean Dollar",
+		CountryName: ["Anguilla", "Antigua and Barbuda", "Dominica", "Grenada", "Montserrat", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent/Grenadines"]
+	},
 
 	"XDR",
 

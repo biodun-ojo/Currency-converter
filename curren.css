@@ -34,11 +34,9 @@ body {
   color: black;
 }
 .main .chi .show {
-  display: none;
-  height: 200px;
+  max-height: 200px;
   /* Adjust the height as needed */
   overflow-y: scroll;
-  position: absolute;
   background-color: white;
   width: 100px;
   margin-top: 10px;

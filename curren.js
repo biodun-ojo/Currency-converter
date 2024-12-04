@@ -113,24 +113,6 @@ currencies.forEach(option => {
 })
 */
 
-
-/*
-currencies.forEach(options => {
-	console.log("code:" + options.code);
-	console.log("CurrencyName:" + options.CurrencyName);
-
-	if (Array.isArray(options.CountryName)) {
-		//console.log("myVariable is an array!");
-		console.log("CountryName:" + options.CountryName[0])
-	} else {
-		//console.log("myVariable is not an array") 
-		console.log("CountryName:" + options.CountryName)
-	}
-})
-*/
-
-
-
 const fromSearch = document.getElementById('fromSearch')
 const diaplayDiv = document.getElementById('newShow')
 
@@ -140,52 +122,54 @@ fromSearch.addEventListener('input', () => {
 
 	const fromSearchz = document.getElementById('fromSearch')
 
-	/*
-	if ("array".includes(fromSearchz.value)) {   // the search.value should be arr 
-		console.log('true')
-	} else {
-		console.log('false')
-	}
-	*/
-
 
 	currencies.forEach(options => {
 
 		//console.log(options.code)
 
 
-		if ( (options.code.includes(fromSearchz.value.toUpperCase())) || (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase())) || ((!(Array.isArray(options.CountryName))) && options.CountryName.toUpperCase().includes(fromSearchz.value.toUpperCase())) ) {   // the search.value should be arr 
+		if ((options.code.includes(fromSearchz.value.toUpperCase())) || (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase())) || ((!(Array.isArray(options.CountryName))) && options.CountryName.toUpperCase().includes(fromSearchz.value.toUpperCase()))) {   // the search.value should be arr 
 			console.log(options.code + "  " + options.CurrencyName + "  " /* options.CountryName */)
 			//display to DOM
+
+			const drops = document.createElement('div');
+			drops.classList = 'them'
+			const codeDiv = document.createElement('div');
+			codeDiv.textContent = options.code;
+			const currencyNameDiv = document.createElement('div');
+			currencyNameDiv.textContent = options.CurrencyName;
+			drops.appendChild(codeDiv)
+			drops.appendChild(currencyNameDiv)
+			diaplayDiv.appendChild(drops)
+
 
 		} else if (Array.isArray(options.CountryName)) {
 			for (let i = 0; i < options.CountryName.length; i++) {
 				if (options.CountryName[i].toUpperCase().includes(fromSearchz.value.toUpperCase())) {
-					console.log(options.code + "  " + options.CurrencyName + "  " + options.CountryName[i])
+					console.log(options.code + "  " + options.CurrencyName + "  " /*+ options.CountryName[i] */)
+
+					const drops = document.createElement('div');
+					drops.classList = 'them'
+					const codeDiv = document.createElement('div');
+					codeDiv.textContent = options.code;
+					const currencyNameDiv = document.createElement('div');
+					currencyNameDiv.textContent = options.CurrencyName;
+					drops.appendChild(codeDiv)
+					drops.appendChild(currencyNameDiv)
+					diaplayDiv.appendChild(drops)
 				}
 			}
 			//console.log(options.CountryName)
 			console.log(' ')
+		} else {
+			//diaplayDiv.innerHTML = ''
 		}
-
-		// if (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase())) {
-
-		// 	if (Array.isArray(options.CountryName)) {
-		// 		console.log(options.CountryName[0])
-
-		// 	} else if (!(Array.isArray(options.CountryName))) {
-		// 		console.log(options.CountryName)
-		// 	}
-
-		// }
-
-		// if ((Array.isArray(options.CountryName)) &&  (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase()))) {
-		// 	console.log(options.CountryName[0])
-		// } else {
-		// 	//console.log(options.CountryName)
-		// }
 	})
 
+
+	if (fromSearchz.value === '') {
+		diaplayDiv.innerHTML = ''
+	}
 })
 
 function search() {
@@ -195,12 +179,4 @@ function search() {
 		console.log('false')
 	}
 }
-// search ()
 
-/*
-if ("array".includes("arr")) {   // the search.value should be arr 
-	console.log('true')
-} else {
-	console.log('false')
-}	
-*/

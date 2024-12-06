@@ -22,7 +22,7 @@ body {
 	}
 
 	.chi {
-		width: 100%;
+		width: 110px;
 
 		.pick {
 			width: 100%;
@@ -37,14 +37,34 @@ body {
 		}
 
 		.show {
-			display: none;
-			height: 200px;
+			//display: none;
+			max-height: 200px;
 			/* Adjust the height as needed */
 			overflow-y: scroll;
-			position: absolute;
+			//position: absolute;
 			background-color: white;
 			width: 100px;
 			margin-top: 10px;
+
+			.them {
+				border-bottom: 1px solid rgba(190, 190, 190, 0.45);
+
+				&:hover {
+					background-color: rgb(172, 172, 172);
+				}
+			}
+
+			.them2 {
+				border-bottom: 1px solid rgba(190, 190, 190, 0.45);
+
+				&:hover {
+					background-color: rgb(172, 172, 172);
+				}
+			}
+		}
+
+		input {
+			border-bottom: 2px solid #cdbbff !important;
 		}
 	}
 

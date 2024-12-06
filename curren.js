@@ -3,11 +3,14 @@ console.log('pops go feel am')
 const btn = document.getElementById('btn')
 const input = document.getElementById('input')
 const output = document.getElementById('output')
-const fromOption = document.getElementById('fromOption')
-const toOption = document.getElementById('toOption')
+// const fromOption = document.getElementById('fromOption')
+// const toOption = document.getElementById('toOption')
+const fromSearch = document.getElementById('fromSearch')
+const diaplayDiv = document.getElementById('newShow')
+const fromSearch2 = document.getElementById('fromSearch2')
+const diaplayDiv2 = document.getElementById('newShow2')
 const catchz = 'f1db9cf4fbef7c0ff586c168'
 
-let api = ` https://v6.exchangerate-api.com/v6/f1db9cf4fbef7c0ff586c168/latest/USD`
 
 async function getrates() {
 	let api = ` https://v6.exchangerate-api.com/v6/f1db9cf4fbef7c0ff586c168/latest/USD`
@@ -23,15 +26,15 @@ async function getrates() {
 
 //NGN/EUR = 1661.0797 / 0.9452 ≈ 1756.26 NGN/EUR
 
-console.log(fromOption.value)
-console.log(toOption.value)
+// console.log(fromSearch.value)
+// console.log(fromSearch2.value)
 
 let inp;
 let out;
 
 function destructure(data) {
-	let inputValue = fromOption.value
-	let wantedOutput = toOption.value
+	let inputValue = fromSearch.value
+	let wantedOutput = fromSearch2.value
 
 	const {
 		conversion_rates: {
@@ -62,9 +65,9 @@ function calculation() {
 
 	let roundedNumber = toInputValue.toFixed(2)
 
-	console.log(`${toInputValue} ${fromOption.value}/${toOption.value} or ${toOption.value}`)
+	console.log(`${toInputValue} ${fromSearch.value}/${fromSearch2.value} or ${fromSearch2.value}`)
 
-	output.textContent = `${fromIputValue} ${fromOption.value} = ${roundedNumber} ${toOption.value}`
+	output.textContent = `${fromIputValue} ${fromSearch.value} = ${roundedNumber} ${fromSearch2.value}`
 }
 
 btn.addEventListener('click', async () => {
@@ -75,26 +78,152 @@ btn.addEventListener('click', async () => {
 		console.log(ratesdata)
 		destructure(ratesdata)
 		calculation()
-		
+
 	} catch (error) {
 		console.error(error)
 	}
 })
 
-currencies.forEach(option => {
-	const optionElement = document.createElement('option');
-	optionElement.textContent = option;
-	optionElement.classList = 'them'
-	optionElement.value = option;
-	// Set the value attribute if needed
-	fromOption.appendChild(optionElement);
-});
+//const pickMe = document.querySelectorAll('.them')
 
-currencies.forEach(option => {
-	const optionElement = document.createElement('option');
-	optionElement.textContent = option;
-	optionElement.classList = 'them'
-	optionElement.value = option;
-	// Set the value attribute if needed
-	toOption.appendChild(optionElement)
-});
+
+fromSearch.addEventListener('input', () => {
+
+	//console.log('hello')
+	diaplayDiv.innerHTML = ''
+
+	const fromSearchz = document.getElementById('fromSearch')
+
+
+	currencies.forEach(options => {
+
+		if ((options.code.includes(fromSearchz.value.toUpperCase())) || (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase())) || ((!(Array.isArray(options.CountryName))) && options.CountryName.toUpperCase().includes(fromSearchz.value.toUpperCase()))) {   // the search.value should be arr 
+			console.log(options.code + "  " + options.CurrencyName + "  " /* options.CountryName */)
+			//display to DOM
+
+			const drops = document.createElement('div');
+			drops.classList = 'them'
+			const codeDiv = document.createElement('div');
+			codeDiv.textContent = options.code;
+			const currencyNameDiv = document.createElement('div');
+			currencyNameDiv.textContent = options.CurrencyName;
+			drops.appendChild(codeDiv)
+			drops.appendChild(currencyNameDiv)
+			diaplayDiv.appendChild(drops)
+
+
+		} else if (Array.isArray(options.CountryName)) {
+			for (let i = 0; i < options.CountryName.length; i++) {
+				if (options.CountryName[i].toUpperCase().includes(fromSearchz.value.toUpperCase())) {
+					console.log(options.code + "  " + options.CurrencyName + "  " /*+ options.CountryName[i] */)
+
+					const drops = document.createElement('div');
+					drops.classList = 'them'
+					const codeDiv = document.createElement('div');
+					codeDiv.textContent = options.code;
+					const currencyNameDiv = document.createElement('div');
+					currencyNameDiv.textContent = options.CurrencyName;
+					drops.appendChild(codeDiv)
+					drops.appendChild(currencyNameDiv)
+					diaplayDiv.appendChild(drops)
+				}
+			}
+			console.log(' ')
+		} else {
+			//diaplayDiv.innerHTML = ''
+		}
+	})
+
+
+	if (fromSearchz.value === '') {
+		diaplayDiv.innerHTML = ''
+	}
+})
+
+
+setInterval( () => {
+	console.clear()
+	//console.log('bolu na my guy')
+	const pickMe = document.querySelectorAll('.them')
+	console.log(pickMe)
+	pickMe.forEach ( divs => {
+		divs.addEventListener('click', () => {
+			//console.log('e work??')
+			console.log(divs.firstElementChild.textContent)
+			fromSearch.value = divs.firstElementChild.textContent
+			diaplayDiv.innerHTML = ''
+		})
+	})
+}, 1000)
+
+
+
+
+fromSearch2.addEventListener('input', () => {
+
+	//console.log('hello')
+	diaplayDiv2.innerHTML = ''
+
+	const fromSearch2z = document.getElementById('fromSearch2')
+
+
+	currencies.forEach(options => {
+
+		if ((options.code.includes(fromSearch2z.value.toUpperCase())) || (options.CurrencyName.toUpperCase().includes(fromSearch2z.value.toUpperCase())) || ((!(Array.isArray(options.CountryName))) && options.CountryName.toUpperCase().includes(fromSearch2z.value.toUpperCase()))) {   // the search.value should be arr 
+			console.log(options.code + "  " + options.CurrencyName + "  " /* options.CountryName */)
+			//display to DOM
+
+			const drops = document.createElement('div');
+			drops.classList = 'them2'
+			const codeDiv = document.createElement('div');
+			codeDiv.textContent = options.code;
+			const currencyNameDiv = document.createElement('div');
+			currencyNameDiv.textContent = options.CurrencyName;
+			drops.appendChild(codeDiv)
+			drops.appendChild(currencyNameDiv)
+			diaplayDiv2.appendChild(drops)
+
+
+		} else if (Array.isArray(options.CountryName)) {
+			for (let i = 0; i < options.CountryName.length; i++) {
+				if (options.CountryName[i].toUpperCase().includes(fromSearch2z.value.toUpperCase())) {
+					console.log(options.code + "  " + options.CurrencyName + "  " /*+ options.CountryName[i] */)
+
+					const drops = document.createElement('div');
+					drops.classList = 'them2'
+					const codeDiv = document.createElement('div');
+					codeDiv.textContent = options.code;
+					const currencyNameDiv = document.createElement('div');
+					currencyNameDiv.textContent = options.CurrencyName;
+					drops.appendChild(codeDiv)
+					drops.appendChild(currencyNameDiv)
+					diaplayDiv2.appendChild(drops)
+				}
+			}
+			console.log(' ')
+		} else {
+			//diaplayDiv.innerHTML = ''
+		}
+	})
+
+
+	if (fromSearch2z.value === '') {
+		diaplayDiv2.innerHTML = ''
+	}
+})
+
+
+setInterval( () => {
+	console.clear()
+	//console.log('bolu na my guy2')
+	const pickMe = document.querySelectorAll('.them2')
+	console.log(pickMe)
+	pickMe.forEach ( divs => {
+		divs.addEventListener('click', () => {
+			//console.log('e work??')
+			console.log(divs.firstElementChild.textContent)
+			fromSearch2.value = divs.firstElementChild.textContent
+			diaplayDiv2.innerHTML = ''
+		})
+	})
+}, 1000)

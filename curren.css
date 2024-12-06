@@ -21,7 +21,7 @@ body {
   outline: none;
 }
 .main .chi {
-  width: 100%;
+  width: 110px;
 }
 .main .chi .pick {
   width: 100%;
@@ -34,14 +34,27 @@ body {
   color: black;
 }
 .main .chi .show {
-  display: none;
-  height: 200px;
+  max-height: 200px;
   /* Adjust the height as needed */
   overflow-y: scroll;
-  position: absolute;
   background-color: white;
   width: 100px;
   margin-top: 10px;
+}
+.main .chi .show .them {
+  border-bottom: 1px solid rgba(190, 190, 190, 0.45);
+}
+.main .chi .show .them:hover {
+  background-color: rgb(172, 172, 172);
+}
+.main .chi .show .them2 {
+  border-bottom: 1px solid rgba(190, 190, 190, 0.45);
+}
+.main .chi .show .them2:hover {
+  background-color: rgb(172, 172, 172);
+}
+.main .chi input {
+  border-bottom: 2px solid #cdbbff !important;
 }
 .main .poi {
   width: 100;

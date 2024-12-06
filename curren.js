@@ -80,43 +80,12 @@ btn.addEventListener('click', async () => {
 	}
 })
 
-/*
-currencies.forEach(option => {
-	const optionElement = document.createElement('option');
-	optionElement.textContent = option;
-	optionElement.classList = 'them'
-	optionElement.value = option;
-	// Set the value attribute if needed
-	fromOption.appendChild(optionElement);
-});
-
-currencies.forEach(option => {
-	const optionElement = document.createElement('option');
-	optionElement.textContent = option;
-	optionElement.classList = 'them'
-	optionElement.value = option;
-	// Set the value attribute if needed
-	toOption.appendChild(optionElement)
-});
-
-currencies.forEach(option => {
-	const optionElement = document.createElement('option');
-	optionElement.classList = 'them'
-	option.forEach(item => {
-		const div = document.createElement('div');
-		const div2 = document.createElement('div');
-		div = option[0]
-		div2 = option[1]
-		optionElement.value = option[0];
-	})
-	toOption.appendChild(optionElement)
-})
-*/
-
+//const pickMe = document.querySelectorAll('.them')
 const fromSearch = document.getElementById('fromSearch')
 const diaplayDiv = document.getElementById('newShow')
 
 fromSearch.addEventListener('input', () => {
+
 	//console.log('hello')
 	diaplayDiv.innerHTML = ''
 
@@ -124,9 +93,6 @@ fromSearch.addEventListener('input', () => {
 
 
 	currencies.forEach(options => {
-
-		//console.log(options.code)
-
 
 		if ((options.code.includes(fromSearchz.value.toUpperCase())) || (options.CurrencyName.toUpperCase().includes(fromSearchz.value.toUpperCase())) || ((!(Array.isArray(options.CountryName))) && options.CountryName.toUpperCase().includes(fromSearchz.value.toUpperCase()))) {   // the search.value should be arr 
 			console.log(options.code + "  " + options.CurrencyName + "  " /* options.CountryName */)
@@ -159,7 +125,6 @@ fromSearch.addEventListener('input', () => {
 					diaplayDiv.appendChild(drops)
 				}
 			}
-			//console.log(options.CountryName)
 			console.log(' ')
 		} else {
 			//diaplayDiv.innerHTML = ''
@@ -172,11 +137,43 @@ fromSearch.addEventListener('input', () => {
 	}
 })
 
-function search() {
-	if ("array".includes(fromSearch.value)) {   // the search.value should be arr 
-		console.log('true')
-	} else {
-		console.log('false')
-	}
-}
 
+// diaplayDiv.addEventListener('mouseover', () => {
+// 	console.log('me')
+// 	const pickMe = document.querySelectorAll('.them')
+// 	console.log(pickMe)
+
+// 	pickMe.forEach ( divs => {
+// 		divs.addEventListener('click', () => {
+// 			console.log('e work??')
+// 			console.log(divs.firstElementChild.textContent)
+// 			fromSearch.value = divs.firstElementChild.textContent
+// 		})
+// 	})
+// })
+
+setInterval( () => {
+	console.clear()
+	console.log('bolu na my guy')
+	const pickMe = document.querySelectorAll('.them')
+	console.log(pickMe)
+	pickMe.forEach ( divs => {
+		divs.addEventListener('click', () => {
+			console.log('e work??')
+			console.log(divs.firstElementChild.textContent)
+			fromSearch.value = divs.firstElementChild.textContent
+		})
+	})
+}, 10000)
+
+// pickMe.addEventListener('click', () => {
+
+// 	pickMe.textcontent = fromSearch.value
+// 	console.log('e work??')
+// })
+
+// pickMe.forEach ( divs => {
+// 	divs.addEventListener('click', () => {
+// 		console.log('e work??')
+// 	})
+// })

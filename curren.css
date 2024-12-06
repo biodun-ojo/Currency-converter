@@ -41,6 +41,9 @@ body {
   width: 100px;
   margin-top: 10px;
 }
+.main .chi .show .them:hover {
+  background-color: antiquewhite;
+}
 .main .poi {
   width: 100;
 }
